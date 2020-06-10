@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="myStyle.css">
+
+<script>
+	function check(){
+		if (document.getElementById("fname").value == ""){
+			alert("You should insert your first name.");
+			return false;
+		}
+		else if (document.getElementById("email").value == ""){
+			alert("You should insert your email.");
+			return false;
+		}
+		else if (document.getElementById("contact").value == ""){
+			alert("You should insert your contact Number.");
+			return false;
+		}
+		else if (document.getElementById("password").value == ""){
+			alert("You should insert your password.");
+			return false;
+		}
+		else if (document.getElementById("password1").value == ""){
+			alert("You should insert your confirm password.");
+			return false;
+		}
+		else{
+			alert("Successfully");
+			
+		}
+	}
+ 
+</script>
+
+</head>
+
+
+<body style ="background-image : url()>
+    <div class="wrapper">
+		<div class="header">
+		<center>
+		<h1> Create Your Account </h1>
+		</center>
+		
+		</div>
+
+		
+		
+		<div class="wrapper1"  >
+		
+			<div class="box1">
+				<h1> Register Here</h1>
+			
+  
+				<form onsubmit="return check()"  method ="POST" action ="./homepage.html">
+					<input type="text" id="fname" placeholder = "Full name" ><br>
+					<input type="text" id="email" placeholder = "Email address" ><br>
+					<input type="text" id="contact" placeholder = "Contact number" ><br>
+					<input type="password" id="password" placeholder = "Create password"><br>
+					<input type="Password" id="password1" placeholder = "Confirm Password"><br>
+		
+					<input type="submit" value = "Submit">
+				</form>
+			</div>
+		</div>
+	
+			
+			
+	</div>
+
+</body>
+
+</html>
