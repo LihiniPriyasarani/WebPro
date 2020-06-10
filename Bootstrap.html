@@ -3,41 +3,9 @@
 <title> Registration Form </title>
 <link rel = "stylesheet" href = "styles.css">
 <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-<script>
-	function check(){
-		if (document.getElementById("Name").value == ""){
-			alert("You should insert your Name.");
-			return false;
-		}
-		else if (document.getElementById("email").value == ""){
-			alert("You should insert your email.");
-			return false;
-		}
-		else if (document.getElementById("contact").value == ""){
-			alert("You should insert your contact Number.");
-			return false;
-		}
-		else if (document.getElementById("password").value == ""){
-			alert("You should insert your password.");
-			return false;
-		}
-		else if (document.getElementById("password1").value == ""){
-			alert("You should insert your confirm password.");
-			return false;
-		}
-		else{
-			alert("Successfully");
-			
-		}
-	}
- 
-</script>
-
-
 </head>
 <body>
-<form onsubmit="return check()"  method ="POST" action ="./homepage.html">
+
 <div class = "container">
 <div class = "row">
 <div class = "col-md-10 offset= md-1">
